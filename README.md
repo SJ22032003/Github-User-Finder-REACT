@@ -1,5 +1,5 @@
 # About Github User Finder 
-currently underdevelopment # Github-User-Finder-REACT
+currently underdevelopment
 
+# https://githubuserfinderapi.netlify.app/
 
-personel Token --> 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
