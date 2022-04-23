@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.brigthen:hover{
+    filter: brightness(110%);
+}
+.brigthen:active{
+    transform: translateY(2px);
+}
