@@ -13,11 +13,11 @@ export const GithubProvider = ({ children }) => {
     try {
       const response = await fetch(`${Github_URL}/users`, {
         headers: {
-        //   Authorization: `token ${Github_TOKEN}`,
+          //   Authorization: `token ${Github_TOKEN}`,
         },
       });
       const data = await response.json();
-    //   console.log(data);
+      //   console.log(data);
       setUsers(data);
       setLoading(false);
     } catch (error) {
@@ -25,13 +25,17 @@ export const GithubProvider = ({ children }) => {
     }
   };
 
-  return <GithubContext.Provider value={{
-      users,
-      loading,
-      fetchUser
-  }}>
+  return (
+    <GithubContext.Provider
+      value={{
+        users,
+        loading,
+        fetchUser,
+      }}
+    >
       {children}
-  </GithubContext.Provider>
+    </GithubContext.Provider>
+  );
 };
 
-export default GithubContext
+export default GithubContext;

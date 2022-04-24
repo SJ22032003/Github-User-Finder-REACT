@@ -17,7 +17,7 @@ function About() {
         margin:"20px"
     },
     {
-        margin:"30px",
+        margin:"0px",
         maxWidth: "90%",
         backgroundColor: "#191d24",
         padding: "1rem",

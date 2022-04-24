@@ -9,3 +9,13 @@
 .brigthen:active{
     transform: translateY(2px);
 }
+
+/* Responsive */
+@media (max-width:412px) {
+    .responsive{
+        display:none;
+    }
+    .size-responsive{
+        font-size:3rem;
+    }
+}
