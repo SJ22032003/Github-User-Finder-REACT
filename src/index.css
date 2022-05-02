@@ -2,20 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.brigthen:hover{
-    filter: brightness(110%);
+.brigthen:hover {
+  filter: brightness(110%);
 }
-.brigthen:active{
-    transform: translateY(2px);
+.brigthen:active {
+  transform: translateY(2px);
 }
-
+.size-change{
+  max-width:70%;
+}
 /* Responsive */
-@media (max-width:412px) {
-    .responsive{
-        display:none;
-    }
-    .size-responsive{
-        font-size:3rem;
-    }
+@media (max-width: 412px) {
+  .responsive {
+    display: none;
+  }
+  .size-responsive {
+    font-size: 3rem;
+  }
 }

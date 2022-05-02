@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function UserItem({ user: { login, avatar_url, html_url } }) {
+function UserItem({ user: { login, avatar_url } }) {
   return (
     <div className="card card-side bg-base-100 shadow-xl brigthen" style={{boxShadow:"5px 5px 0px 0px rgba(0,0,0,0.2)"}}>
       <figure>

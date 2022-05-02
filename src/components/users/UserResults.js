@@ -1,15 +1,10 @@
 import React from "react";
-import { useEffect, useContext } from "react";
+import { useContext } from "react";
 import Loader from "../layout/loading";
 import UserItem from "./UserItem";
 import GithubContext from "../../context/github/GithubContext";
 function UserResults() {
-  const { users, loading, fetchUser } = useContext(GithubContext);
-
-  useEffect(() => {
-    fetchUser();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[]);
+  const { users, loading } = useContext(GithubContext);
 
   if (!loading) {
     return (
