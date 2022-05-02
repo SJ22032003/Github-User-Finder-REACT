@@ -28,7 +28,7 @@ function UserSearch() {
             <div className="relative m-2">
               <input
                 type="text"
-                className="size-change input pr-40 bg-gray-200 input-lg text-black"
+                className="size-change input  bg-gray-200 input-lg text-black"
                 placeholder="Search"
                 value={text}
                 onChange={handleTextChange}
