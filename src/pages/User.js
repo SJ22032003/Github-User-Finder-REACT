@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
-import { FaTwitter ,FaBlog ,FaGithub } from "react-icons/fa";
+import { FaTwitter ,FaGlobe ,FaGithub } from "react-icons/fa";
 import { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import GithubContext from "../context/github/GithubContext";
 import Loading from "../components/layout/loading";
 import UserStat from "../components/layout/UserStat";
+import UserSocial from "../components/layout/UserSocial";
 
 function User() {
   const params = useParams();
@@ -52,6 +53,7 @@ function User() {
   } else {
     return (
       <>
+      <Link to="/home"><div className="btn lg:btn-s md:btn-s m-1">Search</div></Link>
         <main className="main-div">
           <div className="main-container">
             {/* Profile Image & info */}
@@ -59,6 +61,7 @@ function User() {
             <section className="image-container">
               <div className="image">
                 <img src={avatar_url} alt={name} />
+                <div className="image-name">@{login}</div>
               </div>
             </section>
             {/* Bio div */}
@@ -78,12 +81,17 @@ function User() {
               </div>
               {/* Bio */}
               <div className="user-bio">{bio}</div>
+              {/* Visit Github */}
+              <div>
+              <div className="btn btn-ghost outline lg:btn md:btn-s m-3"><a href={html_url} target="_blank" rel="noreferrer">user github</a></div>
+              </div>
               {/* stats */}
               <UserStat followers={followers} following={following} repos={public_repos}/>
+              <UserSocial location={location} blog={blog} twitter={twitter_username} />
               <div className="social-accounts">
               <div className="social-media" style={html_url ? hireableCheck.twitterCheck.valid : hireableCheck.twitterCheck.invalid }><a href={html_url}alt={html_url} target="_blank" rel="noreferrer">{<FaGithub style={{fontSize:"30px"}}/>}</a></div>
               <div className="social-media" style={twitter_username ? hireableCheck.twitterCheck.valid : hireableCheck.twitterCheck.invalid }><a href={`https://twitter.com/${twitter_username}`} alt={twitter_username} target="_blank" rel="noreferrer">{<FaTwitter style={{fontSize:"30px"}}/>}</a></div>
-              <div className="social-media" style={blog ? hireableCheck.twitterCheck.valid : hireableCheck.twitterCheck.invalid }><a href={`https://${blog}`} target="_blank" rel="noreferrer">{<FaBlog style={{fontSize:"30px"}}/>}</a></div>
+              <div className="social-media" style={blog ? hireableCheck.twitterCheck.valid : hireableCheck.twitterCheck.invalid }><a href={blog} target="_blank" rel="noreferrer">{<FaGlobe style={{fontSize:"30px"}}/>}</a></div>
               </div>
             </section>
           </div>
