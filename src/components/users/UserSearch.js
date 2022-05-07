@@ -29,14 +29,14 @@ function UserSearch() {
             <div className="relative m-2">
               <input
                 type="text"
-                className="size-change input  bg-gray-200 input-lg text-black"
+                className="input bg-gray-200  text-black md:input-s lg:input-lg"
                 placeholder="Search"
                 value={text}
                 onChange={handleTextChange}
               />
               <button
                 type="submit"
-                className="absolute top-0 rigth-0 rounded-l-none w-30 btn btn-lg"
+                className="absolute top-0 rigth-0 rounded-l-none w-30 btn lg:btn-lg md:btn-s"
               >
                 Go!
               </button>
@@ -48,7 +48,7 @@ function UserSearch() {
         <div>
           <button
             onClick={clearUsers}
-            className="btn btn-ghost btn-outline btn-lg m-2"
+            className="btn btn-ghost btn-outline btn lg:btn-lg md:btn-s m-2"
           >
             Clear
           </button>

@@ -66,11 +66,14 @@ function User() {
               {/* Name and Hireable */}
               <div className="name-hire">
                 <div className="name">{name}</div>
-                <div className="hire text-white btn btn-xs m-2" style={ hireable === true ? hireableCheck.valid : hireableCheck.invalid}>
+                <div className="hire-type">
+                <div className="hire text-white btn btn-xs m-1" style={ hireable === true ? hireableCheck.valid : hireableCheck.invalid}>
                   Hireable
                 </div>
-                <div className="btn btn-primary m-2 btn-xs">
+                <div className="btn btn-primary m-1 btn-xs">
                   {type}
+                </div>
+
                 </div>
               </div>
               {/* Bio */}
