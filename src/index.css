@@ -28,7 +28,7 @@
   margin: 10px;
 }
 .image {
-  box-shadow: 11px 10px 0px #060606;
+  box-shadow: 11px 10px 0px #060608;
   border-radius: 10px;
   position: relative;
 }
@@ -59,8 +59,10 @@
   display: flex;
   width: fit-content;
   justify-content: space-between;
+  flex-direction: column;
 }
 .name{
+  width: fit-content;
   font-size: 3rem;
   color: #fff;
 }
@@ -85,6 +87,9 @@
   }
   .size-responsive {
     font-size: 3rem;
+  }
+  .name{
+    font-size: 2rem;
   }
 }
 /* Profile Div */
