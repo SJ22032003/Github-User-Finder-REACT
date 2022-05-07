@@ -13,6 +13,7 @@ function UserSearch() {
     e.preventDefault();
     if (text.trim() === "") {
       setAlert("Enter Something" , "error");
+      setText("")
     } else {
       //   search user
       fetchUser(text);

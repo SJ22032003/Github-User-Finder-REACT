@@ -8,8 +8,65 @@
 .brigthen:active {
   transform: translateY(2px);
 }
-.size-change{
-  max-width:70%;
+.set-width {
+  width: fit-content;
+}
+
+/* user-profile */
+.main-div {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #191d24;
+  border-radius: 4px;
+}
+.main-container {
+  width: inherit;
+  display: flex;
+}
+.image-container {
+  margin: 10px;
+}
+.image {
+  box-shadow: 11px 10px 0px #060606;
+  border-radius: 10px;
+}
+.image img {
+  border-radius: 10px;
+  width: clamp(200px, 450px, 500px);
+  height: clamp(150px, 450px, 500px);
+}
+
+.bio-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width:inherit;
+}
+.user-bio{
+  margin-bottom: 20px;
+}
+.name-hire{
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+}
+.name{
+  font-size: 3rem;
+  color: #fff;
+}
+.user-bio{
+  font-size: 1.2rem;
+}
+.social-accounts{
+  display: flex;
+  width: fit-content;
+}
+.social-media{
+  margin:20px;
+}
+.records{
+  margin: auto;
 }
 /* Responsive */
 @media (max-width: 412px) {
@@ -19,4 +76,15 @@
   .size-responsive {
     font-size: 3rem;
   }
+}
+/* Profile Div */
+@media (max-width:1020px) {
+  .main-container{
+    flex-direction: column;
+  }
+  .image-container{
+    width:fit-content;
+    margin: auto;
+  }
+  
 }

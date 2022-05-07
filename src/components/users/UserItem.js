@@ -15,7 +15,7 @@ function UserItem({ user: { login, avatar_url } }) {
       <div className="card-body">
         <h2 className="card-title text-2xl text-white">{login}</h2>
         <div className="card-actions justify-start">
-          <Link to={`/users/${login}`} className="link">
+          <Link to={`/user/${login}`} className="link">
             <span className="text-left text-xs">Know More</span>
           </Link>
         </div>
