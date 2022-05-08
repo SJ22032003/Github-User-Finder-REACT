@@ -13,6 +13,11 @@
 }
 
 /* user-profile */
+.all-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .main-div {
   width: 100%;
   height: fit-content;
@@ -32,7 +37,7 @@
   border-radius: 10px;
   position: relative;
 }
-.image-name{
+.image-name {
   position: absolute;
   bottom: 8px;
   left: 16px;
@@ -43,42 +48,71 @@
 .image img {
   border-radius: 10px;
   width: clamp(200px, 450px, 500px);
-  height: clamp(150px, 450px, 500px);
+  height: clamp(70px, 400px, 500px);
 }
 
 .bio-container {
   margin: 10px;
   display: flex;
   flex-direction: column;
-  width:inherit;
+  width: inherit;
 }
-.user-bio{
+.user-bio {
   margin-bottom: 20px;
 }
-.name-hire{
+.name-hire {
   display: flex;
   width: fit-content;
   justify-content: space-between;
   flex-direction: column;
 }
-.name{
+.name {
   width: fit-content;
   font-size: 3rem;
   color: #fff;
 }
-.user-bio{
+.user-bio {
   font-size: 1.2rem;
 }
-.social-accounts{
+.social-accounts {
   display: flex;
   width: fit-content;
 }
-.social-media{
-  margin:20px;
+.social-media {
+  margin: 20px;
 }
-.records{
+.records {
   margin: auto;
   margin-bottom: 30px;
+}
+
+/* Repos List */
+.repos-list{
+  width: 100%;
+}
+.repo-head{
+  margin: 10px 0px 10px 20px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.repo-item-box{
+  background-color: #191d24;
+  border-radius: 5px;
+}
+.repo-item-name{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px;
+  text-transform: uppercase; 
+}
+.repo-item-desc{
+  font-size: 1rem;
+  padding: 0px 0px 20px 30px ;
+}
+.inner-desc{
+  font-size: 1rem;
+  padding: 10px;
+  font-weight: 200;
 }
 /* Responsive */
 @media (max-width: 412px) {
@@ -88,18 +122,21 @@
   .size-responsive {
     font-size: 3rem;
   }
-  .name{
+  .name {
     font-size: 2rem;
   }
 }
 /* Profile Div */
-@media (max-width:1020px) {
-  .main-container{
+@media (max-width: 1020px) {
+  .main-container {
     flex-direction: column;
   }
-  .image-container{
-    width:fit-content;
+  .image-container {
+    width: fit-content;
     margin: auto;
   }
-  
+  .social-accounts {
+    width: 100%;
+    justify-content: center;
+  }
 }

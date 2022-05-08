@@ -22,7 +22,6 @@ function UserStat({ followers, following, repos }) {
           </div>
           <div className="stat-title">Total Followers</div>
           <div className="stat-value text-primary">{followers}</div>
-          <div className="stat-desc">21% more than last month</div>
         </div>
 
         <div className="stat">
@@ -43,7 +42,6 @@ function UserStat({ followers, following, repos }) {
           </div>
           <div className="stat-title">Following</div>
           <div className="stat-value text-secondary">{following}</div>
-          <div className="stat-desc">21% more than last month</div>
         </div>
 
         <div className="stat">
@@ -64,7 +62,6 @@ function UserStat({ followers, following, repos }) {
           </div>
           <div className="stat-title">Public Repos</div>
           <div className="stat-value text-secondary">{repos}</div>
-          <div className="stat-desc">21% more than last month</div>
         </div>
       </div>
     </div>
